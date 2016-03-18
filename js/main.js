@@ -1,3 +1,4 @@
+var $form = $('form');
 var $input = $('#circle-colorer');
 var $ball = $('.ball');
 
