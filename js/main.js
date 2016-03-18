@@ -1,9 +1,6 @@
 var $input = $('#circle-colorer');
-var $list = $(".list");
+var $ball = $('.ball');
 
-$('#circle-colorer').on('submit', function (e) {
-  var $li = $('<li>');
-  e.preventDefault();
-  $li.html($input.val());
-  $list.append($li);
+$input.on('change', function (e) {
+  $ball.css('background-color', $input.val());
 });
